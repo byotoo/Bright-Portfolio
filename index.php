@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio! I'm a passionate software developer specializing in building user-friendly websites and 
+              innovative software solutions. My focus is on delivering clean, efficient, and impactful code that brings ideas to life."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Bright Otoo's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio! I'm a passionate software developer specializing in building user-friendly websites and innovative software solutions. My focus is on delivering clean, efficient, and impactful code that brings ideas to life.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bright Otoo's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio! I'm a passionate software developer specializing in building user-friendly websites and innovative software solutions. My focus is on delivering clean, efficient, and impactful code that brings ideas to life.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bright Otoo's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio! I'm a passionate software developer specializing in building user-friendly websites and innovative software solutions. My focus is on delivering clean, efficient, and impactful code that brings ideas to life.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Bright Otoo's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Projects</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- My name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Bright Otoo</span>
+            <span>Software Developer</span>
+          </h1>
+
+          <!-- An introductory paragraph about myself -->
+          <p class="header-text">
+            A software developer specializing in building user-friendly 
+            websites and innovative software solutions.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Contact me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Trusted by</h2>
+          <div class="logos">
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/stripe.svg"
+                alt="ASP Ventures"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/datastax.svg"
+                alt="SwiftSale"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/transf.png"
+                alt="Transformation Academy"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/gm.svg"
+                alt="Noble Life AG"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/swift1.png"
+                alt="SwiftSale"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shopify.svg"
+                alt="ASP Ventures"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/agency-elevation.svg"
+                alt="Noble Life AG"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/gitlab.svg"
+                alt="Transformation Academy"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/duolingo.svg"
+                alt="Acheive"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coyote.svg"
+                alt="Oshikii"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/astrato.svg"
+                alt="Chantikh Holdings"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/mercado.svg"
+                alt="ASP Ventures"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">School Website</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  A comprehensive website with a content management system for easier management.
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Laravel</li>
+                  <li>MySql</li>
+                  <li>PHP</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="http://transformationacademyghana.atwebpages.com/" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/transfo.jpg"
+                  alt="SwiftSale"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">SwiftSale</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">A Sales and Inventory Management System</p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Laravel</li>
+                  <li>Postgresql</li>
+                  <li>PHP</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://marthansultd.com/" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/swift.JPG"
+                  alt="oshiki"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">ev.oshikii.com</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Event Ticketing and Paid Voting Web application
+                </p>
+                <ol class="work-technologies">
+                  <li>Laravel</li>
+                  <li>Elexir</li>
+                  <li>Python</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://ev.oshikii.com/" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/oshiki.jpg"
+                  alt="contribute dev"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+                <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
+                <img src="assets/images/skills/php-svgrepo-com.svg" alt="PHP" class="skills-img" loading="lazy" title="Svelte">
+                 <img src="assets/images/skills/python-svgrepo-com.svg" alt="Python" class="skills-img" loading="lazy" title="Typescript">
+                 <img src="assets/images/skills/laravel-svgrepo-com.svg" alt="Laravel" class="skills-img" loading="lazy" title="Web Accessibility">
+                 <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+                 <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+                 <img src="assets/images/skills/graphql.webp" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
+                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section>
+        <h2 class="h2">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Working with Bright was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/User-Profile-PNG-Image.png"
+                  alt="John"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">John Abaogye</h3>
+                  <p class="testimonial-author-job">Business Owner</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                He is a fantastic UI/UX designer and developer with a keen sense for marketing, and lead generation. He's the only designer I know who also has a deep understanding for code and front-end development.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/User-Profile-PNG-Image.png"
+                  alt="Ama"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                   Ama Asiedu-Poku
+                  </h3>
+                  <p class="testimonial-author-job">COO ASP Ventures
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+             
+                Talented artist, experienced with various
+                media and can make any project you are working on look good. He is
+                easy to work with and is a self starter. I would work with him
+                again.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/User-Profile-PNG-Image.png"
+                  alt="Phebe"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Phebe Adjei</h3>
+                  <p class="testimonial-author-job">User</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                He is a true professional with amazing talent. He is a creative
+                thinker, has his finger on the pulse of whats to come, and
+                absolutely one of the quickest and best problem solvers I have
+                ever met.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/User-Profile-PNG-Image.png"
+                  alt="Simon"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Simon Adei</h3>
+                  <p class="testimonial-author-job">User</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+               Bright is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption. 
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/User-Profile-PNG-Image.png"
+                  alt="Henry"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Henry Yu</h3>
+                  <p class="testimonial-author-job">User</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                He is a talented artist. He is very experienced with various
+                media and can make any project you are working on look good. He is
+                easy to work with and is a self starter. I would work with Syed
+                again.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/User-Profile-PNG-Image.png"
+                  alt="Nathan"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Nathan Yelinton</h3>
+                  <p class="testimonial-author-job">User</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available to WOrk
+              </strong>
+              <p class="contact-text">
+                As a software engineer, I construct web interfaces and design
+                systems with a special love for accessibility and the
+                performance. I tend to code things from scratch and enjoy
+                bringing ideas to life.
+              </p> 
+              <p class="contact-text">
+                I'm also an graphic designer, and in my spare time, I do
+                digital art with my pc.
+              </p>
+            </div>
+            <form action="form-process.php" method="POST" class="formcarry-form">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/byotoo" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Codepen" href="https://github.com/byotoo" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/codepen.svg"
+                    alt="Codepen"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/bright-otoo/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://github.com/byotoo" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2023</span> - Designed & developed by <a target="_blank" rel="noopener" href="https://github.com/byotoo">Bright Otoo</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
